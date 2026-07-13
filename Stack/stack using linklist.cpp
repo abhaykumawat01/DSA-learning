@@ -18,11 +18,17 @@ class Stack{
     //push
     void push(int value){
         Node *temp = new Node(value);
-        temp->next = top;
-        top = temp;
-        size++;
-        cout<<value<<" is pushed"<<endl;
-        return;
+        if(temp==NULL){
+            cout<<"stack overflow"<<endl;
+            return;
+        }
+        else{
+            temp->next = top;
+            top = temp;
+            size++;
+            cout<<value<<" is pushed"<<endl;
+            return;
+        }
     }
     //pop
     void pop(){
