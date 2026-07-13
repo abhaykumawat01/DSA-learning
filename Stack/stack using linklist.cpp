@@ -41,6 +41,7 @@ class Stack{
             Node *temp = top;
             top = top->next;
             cout<<temp->data<<" is poped"<<endl;
+            size--;
             delete temp;
         }
     }
