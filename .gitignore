@@ -1,1 +1,11 @@
 .vscode/
+
+# Ignore all compiled C++ executable files
+*.exe
+
+# Ignore all object files
+*.o
+*.obj
+
+# Ignore log files
+*.log
